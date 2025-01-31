@@ -73,7 +73,7 @@ main .main__left--Con {
 }
 
 .main .main__left--Con > div {
-    padding: 2rem;
+    padding: 3rem 2rem;
     border: 1px solid var(--headerBorder);
    
 }
@@ -199,6 +199,8 @@ form input::placeholder {
 
 .main__left--Con .pusher--Con div p {
     font-size: .8rem;
+    max-width: 70%;
+    
 }
 
 .main__left--Con .pusher--Con div i {
@@ -231,10 +233,10 @@ form input::placeholder {
 main .main__right--Con {
     background: var(--secondaryColor);
     color: rgba(255, 255, 255, 1);
-    padding: 2rem;
+    padding: 3rem 2.5rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 main .main__right--Con .price {
@@ -242,7 +244,7 @@ main .main__right--Con .price {
 }
 
 main .main__right--Con .price p{
-   font-size: 3rem;
+   font-size: 4rem;
    margin-left: 10px;
 }
 
@@ -254,8 +256,8 @@ main .main__right--Con .price span:first-child{
 
 main .main__right--Con .price span:last-child{
     position: absolute;
-    bottom: 1%;
-    right: 60%;
+    bottom: 10%;
+    right: 49%;
 }
 
 main .main__right--Con .renews {
