@@ -1,0 +1,90 @@
+@import url('reset.css');
+
+
+html {
+    font-size: 16px;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: rgba(128, 0, 128, .4);
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 30%;
+    margin: 0 auto;
+}
+@media (max-width: 900px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.content--con {
+    /* border: 1px solid whitesmoke; */
+    box-shadow: 2px 2px 4px #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.img--con {
+    /* border: 1px solid rgb(210, 28, 28); */
+    width: 100%;
+}
+
+.img--con img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    
+}
+
+.content--writeup {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: #ffffff;
+}
+
+.content--writeup h1{
+    font-size: 1.6rem;
+}
+
+.content--writeup h1 span{
+    font-size: 1.1rem;
+}
+
+.content--writeup p{
+    font-size: 1rem;
+    letter-spacing: .7px;
+}
+
+
+.pos-abs {
+    position: absolute;
+    background-color: yellow;
+    padding: 0 1rem;
+    top: 3%;
+    left: -3%;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 999;
+}
+
+.pos-abs h2{
+    font-size: 1.2rem;
+}

@@ -1,0 +1,332 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+:root {
+    --accountBorder: #646e71;
+    --headerBorder: #e0e6ea;
+    --bodyBg: #f5f8fa;
+    --secondaryColor: #1179bf;
+    --primaryColor: #ffffff;
+    --tertiaryColor: #038e7f;
+    --primaryTextColor: #1d2c3c;
+    --secondaryTextColor: #646e7a;
+}
+
+
+html {
+    /* 1rem = 16px */
+    font-size: 16px;   
+}
+
+body {
+    width: 1440px;
+    /* height: 1170px; */
+    font-family: Lato, serif;
+    background-color: var(--bodyBg);
+}
+
+header {
+    display: flex;
+    padding: 1rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--headerBorder);
+}
+
+.header .header--nav__section ul li{
+    display: inline;
+    margin: 20px;
+}
+
+.header .header--nav__section ul li a{
+    text-decoration: none;
+    color: var(--primaryTextColor);
+    font-weight: 700;
+}
+
+.header .header--nav__section ul li a:hover{
+    color: var(--secondaryColor);
+}
+
+.header .header--nav__section ul li:last-child{
+    border: 2px solid var(--accountBorder);
+    padding: .4rem .6rem;
+    border-radius: 6px;
+}
+
+main {
+    width: 892px;
+    margin: 0 auto;
+    /* border: 1px solid var(--accountBorder); */
+    box-shadow: 2px 2px 5px #000;
+    margin-block: 80px;
+    display: grid;
+    grid-template-columns: 1fr 312px;
+    /* border-radius: 50px; */
+}
+
+
+main .main__left--Con {
+    background: var(--primaryColor);
+    /* border-radius: 50px; */
+}
+
+.main .main__left--Con > div {
+    padding: 2rem;
+    border: 1px solid var(--headerBorder);
+   
+}
+
+.main .main__left--Con .checkout--div h2 {
+    color: var(--primaryTextColor);
+}
+
+.main .main__left--Con .sign__up--Con{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+
+.main .main__left--Con .sign__up--Con h3,
+.main .main__left--Con .cc--Con h3 {
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+    text-align: center;
+}
+
+.main .main__left--Con .sign__up--Con h3 span,
+.main .main__left--Con .cc--Con h3 span{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 50%;
+    font-size: 16px;
+    text-align: center;
+    color: var(--secondaryColor);
+} 
+
+.form__Con,
+.cc--Con{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form__Con .form__Con--1{
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.form__Con .form__Con--1 div,
+.form__Con--2,
+.cc--Con form {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    width: 100%;
+}
+
+.form__Con .form__Con--1 div label{
+    color: var(--primaryTextColor);
+}
+
+form input {
+    padding: .4rem .6rem;
+    outline: none;
+    background-color: #edeff2;
+    border: none;
+}
+
+form input:focus {
+    border: 2px solid var(--secondaryColor);
+}
+
+form input::placeholder {
+    color: var(--secondaryTextColor);
+}
+
+
+.form__Con--2{
+    width: 75%;
+}
+
+.cc--Con form div {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 100px 70px;
+}
+
+.cc--Con form div input::not(:first-child)::placeholder{
+    text-align: center;
+}
+
+
+.main__left--Con .pusher--Con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+}
+
+.main__left--Con .pusher--Con a {
+    text-decoration: none;
+    text-align: center;
+ 
+}
+
+.main__left--Con .pusher--Con a:first-child{
+    background-color: var(--tertiaryColor);
+    width: 100%;
+    text-align: center;
+    color: var(--primaryColor);
+    padding: .5rem 0;
+    border-radius: 6px;
+}
+
+.main__left--Con .pusher--Con div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    width: 100%;
+    text-align: center;
+}
+
+.main__left--Con .pusher--Con div p {
+    font-size: .8rem;
+}
+
+.main__left--Con .pusher--Con div i {
+    font-size: 14px;
+    padding: 3px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid var(--headerBorder);
+    text-align: center;
+}
+
+.main__left--Con .pusher--Con a:last-child{
+    background-color: var(--secondaryTextColor);
+    text-align: center;
+    color: var(--primaryColor);
+    padding: .5rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.main__left--Con .pusher--Con a span {
+    color: #dadada ;
+    font-size: .6rem;
+}
+
+
+
+main .main__right--Con {
+    background: var(--secondaryColor);
+    color: rgba(255, 255, 255, 1);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+main .main__right--Con .price {
+   position: relative;
+}
+
+main .main__right--Con .price p{
+   font-size: 3rem;
+   margin-left: 10px;
+}
+
+main .main__right--Con .price span:first-child{
+    position: absolute;
+    top: 10%;
+    right: 96%;
+}
+
+main .main__right--Con .price span:last-child{
+    position: absolute;
+    bottom: 1%;
+    right: 60%;
+}
+
+main .main__right--Con .renews {
+   font-size: .9rem;
+   font-style: italic;
+   width: 60%;
+}
+
+main .main__right--Con .services,
+main .main__right--Con .services span {
+   display: flex;
+   flex-direction: column;
+   gap: .8rem;
+}
+
+main .main__right--Con .services span{
+    font-size: .9rem;
+    flex-direction: row;
+    gap: .8rem;
+    align-items: center;
+}
+
+main .main__right--Con .agency--plan{
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+main .main__right--Con .agency--plan a{
+  /* text-decoration: none; */
+  color: inherit;
+  margin-bottom: 15px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--headerBorder);
+}
+
+
+main .main__right--Con .client--tes{
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+main .main__right--Con .client--tes .client--quote{
+   width: 80%;
+   font-style: italic;
+}
+
+.client--quote p {
+    font-weight: 400;
+}
+
+.client--quote span {
+    font-weight: 900;
+}
+
+.client--tes .cl--info{
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.client--tes .cl--info img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
