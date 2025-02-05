@@ -81,10 +81,6 @@ body {
     }
 }
 
-/* main {
-    width: 1440px;
-} */
-
 .hero__section {
     width: 100%;
     display: flex;
@@ -97,11 +93,11 @@ body {
     background-image: url(assets/images/aurora.png);
 }
 
-@media (max-width: 600px){
+/* @media (max-width: 600px){
     .hero__section {
-        /* padding-top: 110px; */
+        padding-top: 110px;
     }
-}
+} */
 
 .hero__section:first-child div h1 {
     margin: 0 auto;
@@ -538,6 +534,13 @@ body {
     border: 1px solid var(--secondaryColor);
     padding: .6rem 1.4rem;
     border-radius: 30px;
+}
+
+@media (max-width: 600px){
+    .section--5-con3 a{
+        padding: .6rem .8rem;
+        font-size: .8rem;
+    }
 }
 
 .section--5-con3 .custom:link,

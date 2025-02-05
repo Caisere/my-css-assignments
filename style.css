@@ -39,7 +39,7 @@ section {
 }
 
 .inner--container .student-info{
-   text-align: center;
+    text-align: center;
 }
 
 .inner--container .student-info h1{
@@ -94,3 +94,37 @@ section {
     color: red;
 }
 
+
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+    .inner--container{
+        gap: 2rem;
+    }
+    .inner--container .student-info h1{
+        font-size: 2rem;
+    }
+    .inner--container .student-info h4{
+        font-size: 1rem;
+    }
+    .inner--container .student-info img{
+        width: 100px;
+        height: 100px;
+    }
+    .container nav h3{
+        font-size: .9rem;
+    }
+
+    .container nav ul{
+        flex-direction: column;
+    }
+
+    .container nav ul li{
+        padding: .4rem;
+    }
+    .container nav ul li a:link,
+    .container nav ul li a:visited{
+        font-size: .8rem;
+    }
+}
